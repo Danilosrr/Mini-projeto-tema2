@@ -5,6 +5,12 @@ let startindex=0;
 const count = 10
 const APIkey = "AIzaSyBWHAZ1mINjKHBxj_aKBsTModL9SiDvAnA"
 
+input.addEventListener('keyup',function(event){
+   if(event.key == "Enter" && input.value !=''){
+        searchBooks();
+    }
+})
+
 function clearBooks(){
     imageContainer.innerHTML=''
 }
